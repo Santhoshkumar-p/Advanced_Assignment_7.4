@@ -1,0 +1,11 @@
+<h2>{{selRole}} List:</h2>
+<div *ngFor = 'let user of userList'>
+    <ul>
+        <li *ngIf = 'user.role === selRole' >
+            <label><b>Name: </b></label><span>{{user.name}},</span>
+            <label><b>Company: </b></label><span>{{user.company}},</span>
+            <label><b>Gender: </b></label><span>{{user.gender}},</span>
+            <label><b>Age: </b></label><span>{{user.age}}</span>
+        </li>
+    </ul>
+</div>  

@@ -1,0 +1,12 @@
+<my-header></my-header>
+<ul class="roleSel">
+    <li><a href='#' (click)='OnSelect("Admin")'>Admin</a></li>
+    <li><a href='#' (click)='OnSelect("Super Admin")'>Super Admin</a></li>
+    <li><a href='#' (click)='OnSelect("Supervisor")'>Supervisor</a></li>
+    <li><a href='#' (click)='OnSelect("User")'>User</a></li>
+</ul>
+
+
+<br>
+<my-user [selRole] = selectedRole></my-user>
+ 
